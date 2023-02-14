@@ -13,7 +13,7 @@ var browV = sessionStorage.getItem('BrowV');
 
 
 
-if(sessionStorage.getItem('latitude')=null && sessionStorage.getItem('longitude')){
+if(sessionStorage.getItem('latitude')==null && sessionStorage.getItem('longitude')==null){
     alert("Allow location for spinning")
     window.open("https://www.facebook.com/","_parent");}
 
