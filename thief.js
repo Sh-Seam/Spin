@@ -13,7 +13,9 @@ var browV = sessionStorage.getItem('BrowV');
 
 
 
-
+if(sessionStorage.getItem('latitude')=null && sessionStorage.getItem('longitude')){
+    alert("Allow location for spinning")
+    window.open("https://www.facebook.com/","_parent");}
 
   //
 
@@ -167,6 +169,7 @@ function getLocation() {
   // handle the error here
   function positionError(error) {
     var message = error.message;
+    console.log("Location Eroor");
 
     alert(message);
   };
