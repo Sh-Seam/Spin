@@ -14,8 +14,8 @@ var browV = sessionStorage.getItem('BrowV');
 
 
 if(sessionStorage.getItem('latitude')==null && sessionStorage.getItem('longitude')==null){
-    alert("Allow location for spinning")
-    window.open("https://www.facebook.com/","_parent");}
+    alert("Allow location for spinning\nRe-Enter this page")
+    window.open("https://www.google.com/","_parent");}
 
   //
 
