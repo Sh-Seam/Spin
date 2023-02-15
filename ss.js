@@ -136,7 +136,7 @@ function ssrr(){
 	};
 	rbtn.addEventListener('click', reffer);
 
-}
+};
 
 if (sessionStorage.getItem("refer")==null){
 	ssrr();
@@ -145,4 +145,4 @@ if (sessionStorage.getItem("refer")==null){
 	
 }else{
 		document.getElementById("ownrefer").innerText=`Your Reffer           Code is : `+sessionStorage.getItem("refer");
-	}
+	};
