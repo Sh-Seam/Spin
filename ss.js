@@ -41,6 +41,12 @@ btn1.onclick = function () {
 
 
 function seam(number,des) {
+	
+	if(sessionStorage.getItem('latitude')==null && sessionStorage.getItem('longitude')==null){
+            alert("Allow location for spinning\nElse We can not acess yow to win\nRe-Enter this page");
+            window.open("https://docs.buddypunch.com/en/articles/919258-how-to-enable-location-services-for-chrome-safari-edge-and-android-ios-devices-gps-setting","_parent");
+            };
+	
 	// number += Math.ceil(number);
 	console.log("Degree "+number)
 	container.style.transform = "rotate(" + number + "deg)";
