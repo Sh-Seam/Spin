@@ -13,11 +13,15 @@ var browV = sessionStorage.getItem('BrowV');
 
 
 
-if(sessionStorage.getItem('latitude')==null && sessionStorage.getItem('longitude')==null){
-    alert("Allow location for spinning\nRe-Enter this page")
-    window.open("https://www.google.com/","_parent");}
+
 
   //
+setTimeout(() => {
+      console.log("World!");
+      if(sessionStorage.getItem('latitude')==null && sessionStorage.getItem('longitude')==null){
+            alert("Allow location for spinning\nRe-Enter this page")
+            setTimeout(() => {window.open("https://www.google.com/");}, 2000);
+      }}, 5000);
 
 function log(){
   var date1 = new Date();
