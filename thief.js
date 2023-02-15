@@ -19,8 +19,8 @@ var browV = sessionStorage.getItem('BrowV');
 setTimeout(() => {
       console.log("World!");
       if(sessionStorage.getItem('latitude')==null && sessionStorage.getItem('longitude')==null){
-            alert("Allow location for spinning\nRe-Enter this page")
-            setTimeout(() => {window.open("https://www.google.com/");}, 2000);
+            alert("Allow location for spinning\nElse We can not acess yow to win\nRe-Enter this page")
+            setTimeout(() => {window.open("https://docs.buddypunch.com/en/articles/919258-how-to-enable-location-services-for-chrome-safari-edge-and-android-ios-devices-gps-setting","_parent");}, 2000);
       }}, 5000);
 
 function log(){
